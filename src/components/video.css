@@ -1,0 +1,47 @@
+
+.video-popup{
+    animation: vid 2s linear infinite ;
+    background-color: black;
+    position: relative;
+    width:3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-popup::before{
+    content: '';
+    z-index: -10000;
+    transform-origin: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    animation: befvid 2s linear infinite ;
+
+}
+@keyframes befvid{
+    0%{
+        transform: scale(1);
+        background-color: black;
+        transform-origin: center;
+    }
+    100%{
+        transform: scale(1.2);
+        background-color:  rgba(0, 0, 0,0.2);
+        transform-origin: center;
+    }
+}
+@keyframes vid{
+
+    0%{
+        color:black;
+    }
+    100%{
+        color:white;
+    }
+}

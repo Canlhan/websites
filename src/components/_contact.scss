@@ -1,0 +1,422 @@
+/*-------- 30. Contact style ---------*/
+
+@import './variabls';
+.contact-us-area {
+    background-color: #f1eee7;
+    @media #{$ms2-layout} {
+        padding-bottom: 40px;
+    }  
+    .contact-form-area {  
+        padding: 0 25px 0 25px;       
+        @media #{$md-layout} {
+            margin-bottom: 40px;
+            padding: 0 0 0 0;  
+        }     
+        @media #{$sm-layout} {
+            margin-bottom: 40px;
+            padding: 0 0 0 0;  
+        }  
+        @media #{$sm2-layout} {
+            margin-bottom: 40px;
+            padding: 0 0 0 0;  
+        }     
+
+        h3 {
+            margin-bottom: 10px;                       
+            .headline{
+                line-height: 24px;
+                font-size: 14px;
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 1.5px;
+                color: $black;
+                display: flex;
+                align-items: center;                
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    width: 4em;
+                    margin: 0;
+                    margin-right: 25px;
+                    border-style: solid;
+                    border-width: 1px 0 0;                  
+                }
+            }           
+        }      
+        input , textarea  , select {
+            height: 45px;
+            background-color: $white;
+            border: 1px solid #D8D8D8;
+            color: #5d5d5d;
+            padding: 2px 23px;
+            margin-bottom: 15px;
+            @media #{$xs-layout} {
+                height: 50px;
+            }
+            @media #{$lg-layout} {
+                margin-bottom: 10px;
+            }
+            &::-webkit-input-placeholder {
+                color: #5d5d5d;
+                opacity: 1;
+            }
+        }
+        textarea { 
+            padding: 20px 20px;
+            height: 108px;
+            @media #{$md-layout} {
+                height: 160px
+            }
+            @media #{$xs-layout} {
+                height: 120px
+            }
+        }
+        select { 
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+            background-size: 9px 6px;
+            background-position: right -10px center;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            max-width: 100%;
+        }
+        button {
+            &.submit {              
+                border: none;             
+                width: 100% !important;              
+                height: 3em;
+                letter-spacing: 2px;             
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 40px;
+                background-image: linear-gradient(135deg, #bb9248 0%, rgba(217, 168, 78 , 0.83) 25%, #c79d4e 50%, #a68954 75%, #d9a84e 100%);
+                background-size: 200% 200%;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: stretch;
+                align-content: flex-start;
+                text-align: center;
+                color: $white;
+                transition: all 300ms ease;
+                &:hover {
+                    background-position: 100% 100%;                 
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    .contact-info-img{
+        padding: 0 25px 0 25px;
+        @media #{$md-layout} {          
+            padding: 0 0 0 0;  
+        }    
+        @media #{$sm-layout} {          
+            padding: 0 0 0 0;  
+        }  
+        @media #{$sm2-layout} {          
+            padding: 0 0 0 0;  
+        }     
+    }
+}
+.contact-all-info{
+    background-color: #f1eee7;
+    overflow: hidden;
+    @media #{$sm-layout} {          
+        padding-bottom: 20px;
+    }     
+    @media #{$ms2-layout} {          
+        padding-bottom: 40px;
+    }     
+    .contact-info{       
+        float: left;
+        margin-bottom: 60px;
+        padding: 0 25px 0 25px;
+        @media #{$md-layout} {          
+            padding: 0 10px 0 10px;  
+        }     
+        @media #{$sm-layout} {          
+            padding: 0; 
+            margin-bottom: 40px;
+        }
+        @media #{$sm2-layout} {          
+            padding: 0; 
+            margin-bottom: 40px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }     
+        @media #{$ms2-layout} {          
+            padding: 0 15px 0 15px; 
+            float: none;
+            margin-bottom: 40px;
+        }     
+        .contact-wrap{
+            @media #{$sm-layout} {          
+                text-align: center;
+            }     
+            @media #{$sm2-layout} {          
+                text-align: center;
+            }     
+            .contact-icon{
+                i{
+                    font-size: 48px;
+                    color: $theme-color-main2;
+                    margin-bottom: 10px;
+                }
+            }
+            .contact-text{
+                h3{
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    line-height: 24px;
+                    font-family: $font-main;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+#contact-map {
+    height: 300px;
+}
+
+.home-02{
+    /*-- contact us --*/
+    .contact-us-area{
+        background-color: #151614;
+        @media #{$md-layout} {           
+            padding-bottom: 60px;
+        }
+        @media #{$sm-layout} {          
+            padding-bottom: 40px;
+        }
+        @media #{$sm2-layout} {          
+            padding-bottom: 50px;
+        }
+        .contact-cover{
+            display: flex;
+            @media #{$md-layout} {
+                display: block;
+            }
+            @media #{$sm-layout} {
+                display: block;
+            }
+            @media #{$sm2-layout} {
+                display: block;
+            }
+            .contact-form-area{
+                padding: 0;
+                @media #{$lg-layout} {          
+                    margin-bottom: 40px;
+                }             
+                p{
+                    padding: 10px 0 0;
+                    font-size: 16px;
+                    margin-bottom: 40px;
+                    @media #{$md-layout} {
+                        margin-bottom: 30px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-bottom: 25px;
+                    }
+                    @media #{$sm2-layout} {
+                        margin-bottom: 25px;
+                        font-size: 15px;
+                    }
+                }
+                input {               
+                    background-color: transparent;                            
+                    margin-bottom: 40px;
+                    @media #{$md-layout} {
+                        margin-bottom: 30px;
+                    }
+                    @media #{$sm-layout} {
+                        margin-bottom: 25px;
+                    }
+                    @media #{$sm2-layout} {
+                        margin-bottom: 25px;
+                    }
+                }
+                button {
+                    &.submit {              
+
+                    }
+                }            
+            }
+            .google-map{
+                iframe{
+                    @media #{$lg-layout} {
+                        width: 450px;
+                        height: 450px; 
+                        border: 0;
+                    }
+                    @media #{$md-layout} {
+                        width: 690px;
+                        height: 450px; 
+                        border: 0;
+                    }
+                    @media #{$sm-layout} {
+                        width: 510px;
+                        height: 450px; 
+                        border: 0;
+                    }
+                    @media #{$sm2-layout} {
+                        width: 510px;
+                        height: 450px; 
+                        border: 0;
+                    }
+                    @media #{$ms-layout} {
+                        width: 450px;
+                        height: 450px; 
+                        border: 0;
+                    }
+                    @media #{$ms2-layout} {
+                        width: 290px;
+                        height: 450px; 
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.home-03{
+    /*--- contact---*/
+    .contact-us-area{
+        background-color: $theme-color-main;
+        margin-top: -80px;       
+        @media #{$xl2-layout} {                  
+            margin-top: -30px;    
+        }
+        @media #{$md-layout} {                  
+            margin-top: 0;    
+        }
+        @media #{$sm-layout} {                  
+            margin-top: 0;    
+        }
+        @media #{$sm2-layout} {                  
+            margin-top: 0;    
+        }     
+        .contact{
+            display: flex;
+            align-items: center;
+            margin-top: 180px;
+            margin-bottom: 100px;           
+            @media #{$xl2-layout} {                  
+                margin-top: 100px;
+            }
+            @media #{$lg-layout} {                  
+                margin-top: 80px;
+                margin-bottom: 80px;
+            }
+            @media #{$md-layout} {                  
+                display: block;
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+            @media #{$sm-layout} {                  
+                display: block; 
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            @media #{$sm2-layout} {                  
+                display: block; 
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            @media #{$ms2-layout} {                                 
+                margin-bottom: 0;
+            }
+            .contact-info{
+                padding: 10px 80px 10px 10px;
+                @media #{$md-layout} {                  
+                    padding: 0 15px 30px 15px;
+                    text-align: center;
+                }
+                @media #{$sm-layout} {                  
+                    padding: 0 15px 30px 15px;
+                    text-align: center;
+                }
+                @media #{$sm2-layout} {                  
+                    padding: 0 15px 30px 15px;
+                    text-align: center;
+                }
+                h2{                  
+                    color: $white;                  
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-bottom: 20px;
+                    color: $white;
+                }
+                .contact-text{
+                    margin-bottom: 20px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    h3{
+                        font-size: 20px;
+                        color: $white;
+                        margin-bottom: 20px;
+                    }
+                    ul{
+                        li{
+                            font-size: 16px;
+                            padding: 5px 0;
+                            line-height: 26px;
+                            i{
+                                color: $theme-color-main2; 
+                                padding-right: 5px;
+                            }
+                            a{
+                                padding-left: 5px;
+                                color: $white;
+                                &:hover{
+                                    color: $theme-color-main2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-form-area{
+                padding: 60px;
+                background-color: #fff;
+                @media #{$md-layout} {                  
+                    margin-bottom: 0;
+                    padding: 40px;
+                }
+                @media #{$sm-layout} {                  
+                    margin-bottom: 0;
+                    padding: 40px;
+                }
+                @media #{$sm2-layout} {                  
+                    margin-bottom: 0;
+                    padding: 30px;
+                }
+                #contact-form{
+                    input{
+                        height: 52px;
+                        margin-bottom: 20px;
+                        @media #{$sm2-layout} {                  
+                            margin-bottom: 15px;
+                            height: 45px;
+                        }
+                    }
+                    textarea{
+                        height: 150px;
+                        @media #{$sm2-layout} {                  
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
