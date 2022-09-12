@@ -2115,11 +2115,7 @@ button, input, optgroup, select, textarea {
     width: 100%;
 }
 
-.container {
-    @media (min-width: 1500px) {
-        max-width: 1470px;
-    }
-}
+
 
 .section-padding-1 {
     .container-fluid {

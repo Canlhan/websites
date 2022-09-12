@@ -286,13 +286,14 @@ const Home = () => {
                         >
 
                           <div
-                            className="single-main-slider slider-animated-2 bg-img slider-height-2"
+                            className=" container single-main-slider slider-animated-2 bg-img slider-height-2  "
                             style={{
                               backgroundImage:"url('https://picsum.photos/2920/1000')"
                               
+                              
                             }}
                           >
-                            <div className="container height-100-percent">
+                            <div className="container-fluid  height-100-percent">
                               <div className="main-slider-content-2">
                                 <h1 className="animated">Studio builds</h1>
                                 <div className="Button-Widget-genesis">

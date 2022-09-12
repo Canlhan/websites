@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Fragment } from 'react';
-import Slider from './components/Slider';
+import Slider from './components/House';
 import Navbar from './components/Navbar';
 
 
